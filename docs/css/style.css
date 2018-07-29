@@ -46,9 +46,14 @@ body {
 .wrapper{
 	padding:2% 4%;
 }
+.wrapper .header{
+	margin-top: 100px;
+}
 /* start header */
 .header_bg{
-	background: #111111;
+	background: #dddddd;
+	background-image: url(../assets/willow.jpg);
+	background-repeat: repeat;
 }
 .logo{
 	float:left;
@@ -75,7 +80,8 @@ body {
 }
 .cssmenu > ul > li > a {
 	font-family: 'Merriweather Sans', sans-serif;
-	color: #999999;
+	color: black;
+	background: white;
 	display: block;
 	font-size: 16px;
 	line-height: 1.5em;
