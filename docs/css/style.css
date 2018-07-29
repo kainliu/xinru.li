@@ -168,6 +168,9 @@ p.para{
 	margin: 2% 0;
 	text-align: center;
 }
+.avatar_img{
+	border-radius: 20px;
+}
 .btn{
 	margin-top: 1.5%;
 	display: inline-block;
