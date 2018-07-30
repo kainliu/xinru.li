@@ -12,7 +12,7 @@ blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
 /* start editing from here */
-a{text-decoration:none;}
+a{text-decoration:none;color:#000;}
 .txt-rt{text-align:right;}/* text align right */
 .txt-lt{text-align:left;}/* text align left */
 .txt-center{text-align:center;}/* text align center */
@@ -27,9 +27,10 @@ a{text-decoration:none;}
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
+img.emoji{max-width:36px;vertical-align: text-top;}
 /*end reset*/
 @font-face {
-    font-family: 'nexa_boldregular';
+    font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, serif;
     src: url('../fonts/Nexa_Free_Bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -56,7 +57,11 @@ body {
 	background-repeat: repeat;
 }
 .logo{
+	font-family: 'Pacifico', sans-serif;
+	font-size: 3em;
+	color: #000;
 	float:left;
+	text-shadow: 2px 2px 0px  rgba(0,0,0,0.35);
 }
 /*menu*/
 .cssmenu {
@@ -66,35 +71,36 @@ body {
 	display:inline-block;
 	position: relative;
 }
-.cssmenu > ul > li a.home{
+/* .cssmenu > ul > li a.home{
 	background: url('../images/home.png') no-repeat;
 }
 .cssmenu > ul > li a.home:hover{
 	background: url('../images/home_h.png') no-repeat;
-}
+} */
 .cssmenu > ul > li.active a{
-	color:#ffffff;
+	color: #ae7f35;
+  font-weight: bold;
 }
 .cssmenu > ul > li span img {
 	vertical-align: middle;
 }
 .cssmenu > ul > li > a {
 	font-family: 'Merriweather Sans', sans-serif;
-	color: black;
-	background: white;
+	color: #0066cc;
+	/* background: white; */
 	display: block;
 	font-size: 16px;
 	line-height: 1.5em;
 	padding: 9px 18px;
-	text-transform: uppercase;
-	-webkit-transition: all 0.3s ease-out;
+	/* text-transform: uppercase; */
+	/* -webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-ms-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out; */
 }
 .cssmenu > ul > li > a:hover {
-	color: #ffffff;
+	/* color: #ffffff; */
 }
 /* start sub_header */
 .header_sub_bg{
@@ -138,11 +144,14 @@ body {
 .content h3{
 	margin-top: 1%;
 }
+.content a{
+	color: #0066cc;
+}
 h2.style a{
-	font-family: 'nexa_boldregular';
+	font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, serif;
 	display:block;
-	text-align: center;
-	font-size: 3.2em;
+	/* text-align: center; */
+	font-size: 2.2em;
 	color: #111111;
 	text-transform: capitalize;
 	letter-spacing: -1px;
@@ -157,13 +166,14 @@ h2.style a:hover{
 	color:#333333;
 }
 h3.style{
-	text-align: center;
+	/* text-align: center; */
 	font-size: 0.8125em;
 	color: #777777;
 	text-transform: capitalize;
 	font-family: 'Merriweather Sans', sans-serif;
 }
 p.para{
+	margin-top: 1em;
 	text-align:left;
 	font-size: 0.8925em;
 	line-height:1.8em;
@@ -175,7 +185,12 @@ p.para{
 	text-align: center;
 }
 .avatar_img{
-	border-radius: 20px;
+	float: right;
+	padding: 1em 1em;
+}
+.avatar_img img{
+	border-radius: 10px;
+	border: 1px solid #000;
 }
 .btn{
 	margin-top: 1.5%;
@@ -354,7 +369,7 @@ p.para{
 }
 h4.style a{
 	font-size: 16px;
-	font-family: 'nexa_boldregular';
+	font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, serif;
 	color: #111111;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
@@ -367,7 +382,7 @@ h4.style a:hover{
 }
 h5.style{
 	font-size:16px;
-	font-family: 'nexa_boldregular';
+	font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, serif;
 	color: #555555;
 	line-height: 1.8em;
 }
@@ -400,7 +415,7 @@ h5.style{
 /* start blog*/
 h4.style1 a{
 	font-size: 1.5em;
-	font-family: 'nexa_boldregular';
+	font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, serif;
 	color: #111111;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
@@ -416,7 +431,7 @@ h4.style1 a:hover{
 }
 .article h5{
 	font-size: 16px;
-	font-family: 'nexa_boldregular';
+	font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, serif;
 	color: #111111;
 }
 .article ul {
@@ -476,7 +491,7 @@ h4.style1 a:hover{
 }
 .grids_of_2 h2{
 	display: block;
-	font-family: 'nexa_boldregular';
+	font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, serif;
 	font-size: 2.5em;
 	color: #111111;
 	letter-spacing: -2px;
@@ -654,6 +669,38 @@ form{
 	background: #111111;
 	color: #ffffff;
 }
+.paper-list ul{
+	margin: 0.5em;
+	list-style: none;
+}
+.paper-list > ul > li{
+	padding: 0.3em 16px; 
+	line-height: 1.5em;
+}
+.paper-list > ul > li::before {
+	content: "▶"; 
+	padding-right: 8px;
+	font-size: 0.5em;
+	color:#ae7f35; 
+	vertical-align: middle;
+}
+.paper-list > ul > li.year{
+	color: #777;
+	padding: 1em 0 0 0;
+
+}
+.paper-list > ul > li.year::before{
+	content: "";
+	padding: 0;
+}
+code{
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	background: #EDEDED;
+	color: #E96163;
+	padding: 2px 5px;
+}
+
 /***** Media Quries *****/
 @media only screen and (max-width: 1366px) {
 	.wrap{
@@ -755,6 +802,9 @@ form{
 	.cssmenu > ul > li > a {
 		padding: 10px 10px;
 		font-size: 13px;
+	}
+	.avatar_img img{
+		max-width: 100px;
 	}
 }
 @media only screen and (max-width: 480px) {
