@@ -55,6 +55,8 @@ body {
 	background: #dddddd;
 	background-image: url(../assets/willow.jpg);
 	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;
 }
 .logo{
 	font-family: 'Pacifico', sans-serif;
